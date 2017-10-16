@@ -69,7 +69,7 @@
      */
     ModalAjax.prototype.injectHtml = function(html) {
         // Find form and inject it
-        var form = jQuery(html).filter('form');
+        var form = jQuery(html).find('form');
 
         // Remove existing forms
         if (jQuery(this.element).find('form').length > 0) {
